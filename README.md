@@ -38,15 +38,15 @@ usage: `chapters_to_xml.py [-h] [-d] [-i timestamp titlestart titleend] [-c conf
 Converts lines of text containing chapter information into XML readable by
 mkvpropedit.
 
-| positional arguments
-|:-|-|
-|`inputfile`  |text file where each line has a chapter name and start time
-|`outputfile` |XML file to be written to.
+| positional arguments | |
+|:--|---|
+|`inputfile`  | text file where each line has a chapter name and start time
+|`outputfile` | XML file to be written to.
 
-|optional arguments
-|:-|-|
-|`-h`, `--help`          |show this help message and exit
-|`-d`, `--debug`         |enable debug printing
+|optional arguments | |
+|:---|---|
+|`-h`, `--help`          | show this help message and exit
+|`-d`, `--debug`         | enable debug printing
 |`-i timestamp titlestart titleend` | specifies the indices of the elements on each line (supports negative indices) where timestamp=tokens[timestamp] and title=tokens[titlestart:titleend]. Arguments must be integers or None. If neither -i nor -c are specified, an indexing configuration will be automatically generated.
-|`-c config`             |use a premade indexing configuration. Overrides the `-i` option. Valid configs are: super_mario_galaxy, squad_goals, pink_season, minecraft
-|`-e endtime`            |specifies the timestamp of the end of the final chapter, usually the length of the entire track.
+|`-c config`             | use a premade indexing configuration. Overrides the `-i` option. Valid configs are: super_mario_galaxy, squad_goals, pink_season, minecraft
+|`-e endtime`            | specifies the timestamp of the end of the final chapter, usually the length of the entire track.
